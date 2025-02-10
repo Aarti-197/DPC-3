@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Timeline Flowchart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .box {
+      background: #ffffff;
+      border: 2px solid #007bff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      position: relative;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .details {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #eef6ff;
+      border-radius: 12px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Interactive Timeline for Research Progress</div>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <div class="box">
+        <strong>DPC-4: Foundation and Initial Work</strong>
+        <div class="details">
+          <ul>
+            <li>Complete literature review and organize references.</li>
+            <li>Collect and preprocess datasets (e.g., cleaning, labeling).</li>
+            <li>Explore and select models for initial experimentation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <strong>DPC-5: Model Development and Evaluation</strong>
+        <div class="details">
+          <ul>
+            <li>Train models and fine-tune hyperparameters.</li>
+            <li>Evaluate performance using metrics (accuracy, recall, etc.).</li>
+            <li>Document and finalize the best-performing model.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <div class="box">
+        <strong>DPC-6: Deployment and Real-Time Analysis</strong>
+        <div class="details">
+          <ul>
+            <li>Set up real-time pipelines and APIs for deployment.</li>
+            <li>Deploy the model for real-time sentiment analysis.</li>
+            <li>Monitor performance and optimize for real-time use.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <strong>DPC-7: Final Refinement and Report Writing</strong>
+        <div class="details">
+          <ul>
+            <li>Perform final evaluations and make improvements.</li>
+            <li>Write and submit the final research paper.</li>
+            <li>Prepare presentation for the final defense.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

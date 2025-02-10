@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Methodology Flowchart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .flowchart-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      max-width: 1200px;
+    }
+
+    .flowchart-box {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+      line-height: 1.6; /* Line spacing */
+    }
+
+    .flowchart-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .flowchart-box h3 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .flowchart-box p,
+    .flowchart-box ul {
+      margin: 10px 0 0;
+      font-size: 1rem;
+      color: #555;
+      text-align: justify; /* Justified alignment */
+    }
+
+    .flowchart-box ul {
+      padding-left: 20px;
+      text-align: justify;
+    }
+
+    .connector {
+      width: 4px;
+      height: 30px;
+      background-color: #007bff;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="flowchart-container">
+    <!-- Step 1 -->
+    <div class="flowchart-box">
+      <h3>1. Research Approach</h3>
+      <p>The study uses a mixed-method approach combining:</p>
+      <ul>
+        <li><strong>Quantitative Analysis:</strong> Evaluate performance with metrics like accuracy, precision.</li>
+        <li><strong>Qualitative Insights:</strong> Understand ethical impacts of content moderation.</li>
+      </ul>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="flowchart-box">
+      <h3>2. Data Collection</h3>
+      <p>Datasets for training include:</p>
+      <ul>
+        <li><strong>Jigsaw Toxic Dataset:</strong> Labeled toxic content (e.g., obscene, threat).</li>
+        <li><strong>Custom AI Responses:</strong> GPT-generated content labeled as harmful, neutral, or safe.</li>
+      </ul>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="flowchart-box">
+      <h3>3. Preprocessing</h3>
+      <p>Steps to prepare data:</p>
+      <ul>
+        <li><strong>Cleaning:</strong> Remove symbols, normalize text, handle missing data.</li>
+        <li><strong>Annotation:</strong> Label text as harmful, contextually harmful, or safe.</li>
+        <li><strong>Tokenization:</strong> Use transformer-compatible tokenizers and word embeddings.</li>
+      </ul>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="flowchart-box">
+      <h3>4. Model Development</h3>
+      <p>Steps for building the model:</p>
+      <ul>
+        <li><strong>Architecture:</strong> Combine transformers with explainability techniques.</li>
+        <li><strong>Training:</strong> Fine-tune pre-trained models with labeled data.</li>
+        <li><strong>Objectives:</strong> Detect harmful content, classify categories, explain flagged content.</li>
+      </ul>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="flowchart-box">
+      <h3>5. Evaluation</h3>
+      <p>Evaluate the model with:</p>
+      <ul>
+        <li><strong>Metrics:</strong> Accuracy, precision, recall, F1 score, and explainability metrics.</li>
+        <li><strong>Comparative Analysis:</strong> Compare with existing systems like OpenAI Moderation API.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
